@@ -256,7 +256,7 @@ def main():
     p.add_argument("--password", required=True)
     p.add_argument("--out", default="nu_days.txt")
     p.add_argument("--mail-out", default="usprawiedliwienie.txt")
-    p.add_argument("--signer", required=True, help="name to use in mail signature")
+    p.add_argument("--signer", help="name to use in mail signature")
     p.add_argument("--headful", action="store_true", help="show browser")
     p.add_argument("--skip-mail", action="store_true", help="skip mail body creation")
     args = p.parse_args()
