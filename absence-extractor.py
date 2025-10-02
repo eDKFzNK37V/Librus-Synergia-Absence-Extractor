@@ -258,6 +258,7 @@ def main():
     p.add_argument("--mail-out", default="usprawiedliwienie.txt")
     p.add_argument("--signer", required=True, help="name to use in mail signature")
     p.add_argument("--headful", action="store_true", help="show browser")
+    p.add_argument("--skip-mail", action="store_true", help="skip mail body creation")
     args = p.parse_args()
     try:
         # 1) run Playwright flow and extract NU rows
@@ -265,10 +266,10 @@ def main():
         # 2) save raw NU rows (only NU>0)
         out = save_results(rows, args.out)
         print(f"[result] extracted {len([r for r in rows if r[1] > 0])} NU rows; saved to: {out}", flush=True)
-        # 3) build and save mail body
-        # make_results_into_mail and save_mail_body must be defined/imported in this module
-        mail_path = save_mail_body_compact(rows, args.mail_out)
-        print(f"[result] mail body saved to: {mail_path}", flush=True)
+        # 3) build and save mail body (unless skipped)
+        if not args.skip_mail:
+            mail_path = save_mail_body_compact(rows, args.mail_out, signer=args.signer)
+            print(f"[result] mail body saved to: {mail_path}", flush=True)
     except Exception as e:
         tb = "".join(traceback.format_exception(type(e), e, e.__traceback__))
         print("[error] Exception:", file=sys.stderr, flush=True)
