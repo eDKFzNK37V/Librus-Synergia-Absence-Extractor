@@ -287,6 +287,8 @@ def main():
     p.add_argument("--headful", action="store_true", help="show browser")
     p.add_argument("--skip-mail", action="store_true", help="skip mail body creation")
     args = p.parse_args()
+    if not args.skip_mail and not args.signer:
+        p.error("--signer is required unless --skip-mail is specified")
     try:
         # 1) run Playwright flow and extract NU rows
         rows = run_full_flow(args.user, args.password, headful=args.headful)
