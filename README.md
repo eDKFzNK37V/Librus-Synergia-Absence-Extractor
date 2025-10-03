@@ -27,7 +27,9 @@ Z wyrazami szacunku
 
 **Instalation guide**
 Clone the repository:
+```
 git clone https://github.com/eDKFzNK37V/Librus-Synergia-Absence-Extractor.git
+```
 Create and run a virtual enviorament inside a cloned repository directory:
 ```
 python -m venv .venv
