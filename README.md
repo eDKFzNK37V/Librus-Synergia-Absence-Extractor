@@ -27,7 +27,9 @@ Z wyrazami szacunku
 
 **Instalation guide**
 Clone the repository:
+```
 git clone https://github.com/eDKFzNK37V/Librus-Synergia-Absence-Extractor.git
+```
 Create and run a virtual enviorament inside a cloned repository directory:
 ```
 python -m venv .venv
@@ -47,21 +49,21 @@ python absence-extractor.py --user YOUR_LOGIN --password YOUR_PASSWORD --signer 
 
 - `--user` _(required)_: Your Librus login
 
-- `--password` _(required)_: Your Librus password pip install -r requirements.txt
+- `--password` _(required)_: Your Librus password 
 
-- `--out`: Output file for NU days (default: `nu_days.txt`) # If requirements.txt is missing, install manually:
+- `--out`: Output file for NU days (default: `nu_days.txt`) 
 
 - `--skip-mail`: Mail
 
-- `--mail-out`: Output file for mail body (default: `usprawiedliwienie.txt`) pip install playwright beautifulsoup4
+- `--mail-out`: Output file for mail body (default: `usprawiedliwienie.txt`) 
   
 - `--headful`: Show browser window (for debugging)
 
-- `--signer` _(required if --skip-mail is not present)_: Name to use in mail signature (required) python -m playwright install
+- `--signer` _(required if --skip-mail is not present)_: Name to use in mail signature (required) 
 
 **Output**
 
-- `nu_days.txt`: Tab-separated list of dates and NU counts (only if NU > 0)Run the script with your Librus credentials:
+- `nu_days.txt`: Tab-separated list of dates and NU counts (only if NU > 0)
 
 - `usprawiedliwienie.txt`: Polish mail body for absence justification```sh
 
