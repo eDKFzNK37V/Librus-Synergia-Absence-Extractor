@@ -2,6 +2,7 @@
 
 This project automates the extraction of non-justified absences (NU) from the Librus Synergia portal using Playwright and Python. It logs in to the portal, navigates to the attendance page, parses absence data, and saves the results to a file. Optionally, it generates a ready-to-send mail body for absence justification.
 
+_There exists the [web version of the app](https://librus-absence-extractor-12a301a054df.herokuapp.com/), but I advice you to use the self run version of it on your PC in virtual envrioment. Which can be found in [here](https://github.com/eDKFzNK37V/Librus-Synergia-Absence-Extractor/tree/dekstop-version)._
 **Features**
 
 - Automated login to Librus Synergia via Playwright
