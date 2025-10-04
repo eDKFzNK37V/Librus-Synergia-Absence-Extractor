@@ -220,9 +220,6 @@ def run_full_flow(username: str, password: str, headful: bool = False) -> List[T
                 continue
         # --- end incorrect-login check ---
         # navigate to attendance
-        # After using user and password:
-        del username
-        del password
         try:
             page.goto(ATTENDANCE_PAGE, wait_until="networkidle", timeout=15000)
         except Exception:
