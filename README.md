@@ -29,13 +29,19 @@ Z wyrazami szacunku
 
 **Requirements**
 
-- Python 3.8+- Python 3.8+
+- Python 3.8+
+
+- git 2.51.0+ (for clone repository command, if you doens't have git, use the button for download)
 
 **Instalation guide**
 Clone the repository:
 ```
 git clone https://github.com/eDKFzNK37V/Librus-Synergia-Absence-Extractor.git
+
 ```
+
+or download it by hand [here](https://github.com/eDKFzNK37V/Librus-Synergia-Absence-Extractor/archive/refs/heads/dekstop-version.zip), extract it and then enter the command prompt in directory of extracted folder.
+
 Create and run a virtual enviorament inside a cloned repository directory:
 ```
 python -m venv .venv
