@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "heroku-postbuild": "playwright install chromium"
+  }
+}
