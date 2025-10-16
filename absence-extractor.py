@@ -258,7 +258,7 @@ def make_compact_mail(items: List[Tuple[str,int]], signer: str) -> str:
         return "Dzień dobry,\nBrak nieusprawiedliwionych nieobecności.\n\nZ wyrazami szacunku\n" + signer + "\n"
     day_months = ",".join(dt.strftime("%d.%m") for dt in parsed)
     if len(years) == 1:
-        year_part = f" roku pańskiego {next(iter(years))}."
+        year_part = f"roku pańskiego {next(iter(years))}."
     else:
         year_part = "."
     msg = (
