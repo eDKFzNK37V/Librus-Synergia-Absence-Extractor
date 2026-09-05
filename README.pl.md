@@ -1,5 +1,7 @@
 **Librus Synergia Absence Extractor**
 
+[English](README.md) | Polish
+
 Ten projekt automatyzuje proces pozyskiwania danych dotyczących nieuzasadnionych nieobecności (NU) z portalu Librus Synergia przy użyciu biblioteki Playwright i języka Python. Loguje się do portalu, przechodzi do strony obecności, analizuje dane dotyczące nieobecności i zapisuje wyniki do pliku. Opcjonalnie generuje gotową do wysłania treść wiadomości e-mail służącą do uzasadnienia nieobecności.
 
 
